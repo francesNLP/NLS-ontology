@@ -1,0 +1,478 @@
+<https://w3id.org/nls#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/nls#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/nls/0.0.1> .
+<https://w3id.org/nls#> <http://purl.org/dc/elements/1.1/creator> "Rosa Filgueira" .
+<https://w3id.org/nls#> <http://purl.org/dc/elements/1.1/description> "An ontology designed to represent collections and volumes from NLS. The ontology extends Schema.org."@en .
+<https://w3id.org/nls#> <http://purl.org/dc/elements/1.1/license> <https://opensource.org/licenses/MIT> .
+<https://w3id.org/nls#> <http://purl.org/dc/elements/1.1/title> "NLS Ontology" .
+<https://w3id.org/nls#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nls"@en .
+<https://w3id.org/nls#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/nls> .
+<https://w3id.org/nls#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/editor
+<http://schema.org/editor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/hasPart
+<http://schema.org/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/publisher
+<http://schema.org/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasRevisionOf
+<http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/nls#editor
+<https://w3id.org/nls#editor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/nls#editor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/editor> .
+<https://w3id.org/nls#editor> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#editor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/nls#Person> .
+<https://w3id.org/nls#editor> <http://www.w3.org/2000/01/rdf-schema#comment> "is the editor of a collection or supplement"@en .
+<https://w3id.org/nls#editor> <http://www.w3.org/2000/01/rdf-schema#label> "editor"@en .
+# 
+# https://w3id.org/nls#hasPart
+<https://w3id.org/nls#hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/nls#hasPart> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<https://w3id.org/nls#hasPart> <http://www.w3.org/2000/01/rdf-schema#comment> "is the parthood property relating a Whole to a Part."@en .
+<https://w3id.org/nls#hasPart> <http://www.w3.org/2000/01/rdf-schema#label> "has part"@en .
+# 
+# https://w3id.org/nls#publisher
+<https://w3id.org/nls#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/nls#publisher> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/publisher> .
+<https://w3id.org/nls#publisher> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#publisher> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Person> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Organization> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "is the publisher of a collection or supplement. The publisher can be one or several persons, and/or an organization"@en .
+<https://w3id.org/nls#publisher> <http://www.w3.org/2000/01/rdf-schema#label> "publisher"@en .
+# 
+# https://w3id.org/nls#referencedBy
+<https://w3id.org/nls#referencedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/nls#referencedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Collection> .
+<https://w3id.org/nls#referencedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/nls#Book> .
+<https://w3id.org/nls#referencedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "is a book which references a collection"@en .
+<https://w3id.org/nls#referencedBy> <http://www.w3.org/2000/01/rdf-schema#label> "referenced by"@en .
+# 
+# https://w3id.org/nls#revisionOf
+<https://w3id.org/nls#revisionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/nls#revisionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#wasRevisionOf> .
+<https://w3id.org/nls#revisionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Collection> .
+<https://w3id.org/nls#revisionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/nls#Collection> .
+<https://w3id.org/nls#revisionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "is the property indicating the creatin of a new revision of an item"@en .
+<https://w3id.org/nls#revisionOf> <http://www.w3.org/2000/01/rdf-schema#label> "revision of"@en .
+# 
+# https://w3id.org/nls#supplementsTo
+<https://w3id.org/nls#supplementsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/nls#supplementsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Supplement> .
+<https://w3id.org/nls#supplementsTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/nls#Collection> .
+<https://w3id.org/nls#supplementsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "is the collection(s) that a supplement supplements."@en .
+<https://w3id.org/nls#supplementsTo> <http://www.w3.org/2000/01/rdf-schema#label> "supplements to"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/birthDate
+<http://schema.org/birthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/deathDate
+<http://schema.org/deathDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://schema.org/identifier
+<http://schema.org/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/nls#altoXML
+<https://w3id.org/nls#altoXML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#altoXML> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#altoXML> <http://www.w3.org/2000/01/rdf-schema#comment> "is the name of the ALTO XML file representing a page from a particular volume."@en .
+<https://w3id.org/nls#altoXML> <http://www.w3.org/2000/01/rdf-schema#label> "alto XML"@en .
+# 
+# https://w3id.org/nls#birthDate
+<https://w3id.org/nls#birthDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#birthDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/birthDate> .
+<https://w3id.org/nls#birthDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Person> .
+<https://w3id.org/nls#birthDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/nls#birthDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of birth of a person"@en .
+<https://w3id.org/nls#birthDate> <http://www.w3.org/2000/01/rdf-schema#label> "Birth date"@en .
+# 
+# https://w3id.org/nls#deathDate
+<https://w3id.org/nls#deathDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#deathDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/deathDate> .
+<https://w3id.org/nls#deathDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Person> .
+<https://w3id.org/nls#deathDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/nls#deathDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of death of a person"@en .
+<https://w3id.org/nls#deathDate> <http://www.w3.org/2000/01/rdf-schema#label> "death date"@en .
+# 
+# https://w3id.org/nls#genre
+<https://w3id.org/nls#genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#genre> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#genre> <http://www.w3.org/2000/01/rdf-schema#comment> "is the genre of a collection or a supplement."@en .
+<https://w3id.org/nls#genre> <http://www.w3.org/2000/01/rdf-schema#label> "genre"@en .
+# 
+# https://w3id.org/nls#header
+<https://w3id.org/nls#header> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#header> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Page> .
+<https://w3id.org/nls#header> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#header> <http://www.w3.org/2000/01/rdf-schema#comment> "is the header of a page"@en .
+<https://w3id.org/nls#header> <http://www.w3.org/2000/01/rdf-schema#label> "header"@en .
+# 
+# https://w3id.org/nls#language
+<https://w3id.org/nls#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#language> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Volume> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#language> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#language> <http://www.w3.org/2000/01/rdf-schema#comment> "is the language used to write the collection"@en .
+<https://w3id.org/nls#language> <http://www.w3.org/2000/01/rdf-schema#label> "language"@en .
+# 
+# https://w3id.org/nls#letters
+<https://w3id.org/nls#letters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#letters> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#letters> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#letters> <http://www.w3.org/2000/01/rdf-schema#comment> "is the range from which the terms of a collection or supplement are splitted across volumes."@en .
+<https://w3id.org/nls#letters> <http://www.w3.org/2000/01/rdf-schema#label> "letters"@en .
+# 
+# https://w3id.org/nls#metsXML
+<https://w3id.org/nls#metsXML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#metsXML> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#metsXML> <http://www.w3.org/2000/01/rdf-schema#comment> "is the name of the METS XML file representing a volume from a particular collection or supplement."@en .
+<https://w3id.org/nls#metsXML> <http://www.w3.org/2000/01/rdf-schema#label> "mets XML"@en .
+# 
+# https://w3id.org/nls#mmsid
+<https://w3id.org/nls#mmsid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#mmsid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/identifier> .
+<https://w3id.org/nls#mmsid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#mmsid> <http://www.w3.org/2000/01/rdf-schema#comment> "is the Metadata Management System identifier of a collection or supplement"@en .
+<https://w3id.org/nls#mmsid> <http://www.w3.org/2000/01/rdf-schema#label> "mmsid"@en .
+# 
+# https://w3id.org/nls#name
+<https://w3id.org/nls#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Person> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Organization> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#name> <http://www.w3.org/2000/01/rdf-schema#comment> "is the name of an item"@en .
+<https://w3id.org/nls#name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# https://w3id.org/nls#number
+<https://w3id.org/nls#number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#number> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#number> <http://www.w3.org/2000/01/rdf-schema#comment> "is the number of the item (e.g., volume 2, page 100, etc.)"@en .
+<https://w3id.org/nls#number> <http://www.w3.org/2000/01/rdf-schema#label> "number"@en .
+# 
+# https://w3id.org/nls#numberOfPages
+<https://w3id.org/nls#numberOfPages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#numberOfPages> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Volume> .
+<https://w3id.org/nls#numberOfPages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#numberOfPages> <http://www.w3.org/2000/01/rdf-schema#comment> "is the number of pages of a volume."@en .
+<https://w3id.org/nls#numberOfPages> <http://www.w3.org/2000/01/rdf-schema#label> "number of pages"@en .
+# 
+# https://w3id.org/nls#numberOfVolumes
+<https://w3id.org/nls#numberOfVolumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#numberOfVolumes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#numberOfVolumes> <http://www.w3.org/2000/01/rdf-schema#comment> "is the number of volumes of a collection or supplement."@en .
+<https://w3id.org/nls#numberOfVolumes> <http://www.w3.org/2000/01/rdf-schema#label> "number of volumes"@en .
+# 
+# https://w3id.org/nls#numberOfWords
+<https://w3id.org/nls#numberOfWords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#numberOfWords> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#numberOfWords> <http://www.w3.org/2000/01/rdf-schema#comment> "is the number of words of an entry in the collection."@en .
+<https://w3id.org/nls#numberOfWords> <http://www.w3.org/2000/01/rdf-schema#label> "number of words"@en .
+# 
+# https://w3id.org/nls#part
+<https://w3id.org/nls#part> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#part> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#unionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Volume> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#part> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#part> <http://www.w3.org/2000/01/rdf-schema#comment> "is the number representing the part of a volume. E.g., part 1 of 2"@en .
+<https://w3id.org/nls#part> <http://www.w3.org/2000/01/rdf-schema#label> "part" .
+# 
+# https://w3id.org/nls#permanentURL
+<https://w3id.org/nls#permanentURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#permanentURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/identifier> .
+<https://w3id.org/nls#permanentURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#permanentURL> <http://www.w3.org/2000/01/rdf-schema#comment> "is the permanent URL of a volume in the NLS."@en .
+<https://w3id.org/nls#permanentURL> <http://www.w3.org/2000/01/rdf-schema#label> "permanent URL"@en .
+# 
+# https://w3id.org/nls#physicalDescription
+<https://w3id.org/nls#physicalDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#physicalDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#physicalDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "is the physical description of a collection or supplement."@en .
+<https://w3id.org/nls#physicalDescription> <http://www.w3.org/2000/01/rdf-schema#label> "physical description"@en .
+# 
+# https://w3id.org/nls#printedAt
+<https://w3id.org/nls#printedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#printedAt> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#printedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#printedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "is the place in which a collection or supplement was printed." .
+<https://w3id.org/nls#printedAt> <http://www.w3.org/2000/01/rdf-schema#label> "printed at"@en .
+# 
+# https://w3id.org/nls#publicationYear
+<https://w3id.org/nls#publicationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#publicationYear> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#publicationYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#publicationYear> <http://www.w3.org/2000/01/rdf-schema#comment> "is the year that a collection or supplement was published."@en .
+<https://w3id.org/nls#publicationYear> <http://www.w3.org/2000/01/rdf-schema#label> "publication year"@en .
+# 
+# https://w3id.org/nls#shelfLocator
+<https://w3id.org/nls#shelfLocator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#shelfLocator> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#unionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#shelfLocator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#shelfLocator> <http://www.w3.org/2000/01/rdf-schema#comment> "is the shelf locator in which a collection or supplement is stored in the library."@en .
+<https://w3id.org/nls#shelfLocator> <http://www.w3.org/2000/01/rdf-schema#label> "shelf locator"@en .
+# 
+# https://w3id.org/nls#subtitle
+<https://w3id.org/nls#subtitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#subtitle> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#unionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#subtitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#subtitle> <http://www.w3.org/2000/01/rdf-schema#comment> "is the subtitle of an item."@en .
+<https://w3id.org/nls#subtitle> <http://www.w3.org/2000/01/rdf-schema#label> "subtitle"@en .
+# 
+# https://w3id.org/nls#termsOfAddress
+<https://w3id.org/nls#termsOfAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#termsOfAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Person> .
+<https://w3id.org/nls#termsOfAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#termsOfAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "is the terms of address of a person."@en .
+<https://w3id.org/nls#termsOfAddress> <http://www.w3.org/2000/01/rdf-schema#label> "terms of address"@en .
+# 
+# https://w3id.org/nls#text
+<https://w3id.org/nls#text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#text> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/nls#Page> .
+<https://w3id.org/nls#text> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#text> <http://www.w3.org/2000/01/rdf-schema#comment> "is the text of page."@en .
+<https://w3id.org/nls#text> <http://www.w3.org/2000/01/rdf-schema#label> "text"@en .
+# 
+# https://w3id.org/nls#title
+<https://w3id.org/nls#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#title> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#unionOf> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Volume> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Supplement> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/nls#Collection> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/nls#title> <http://www.w3.org/2000/01/rdf-schema#comment> "is the title of an item."@en .
+<https://w3id.org/nls#title> <http://www.w3.org/2000/01/rdf-schema#label> "title"@en .
+# 
+# https://w3id.org/nls#volumeId
+<https://w3id.org/nls#volumeId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/nls#volumeId> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/identifier> .
+<https://w3id.org/nls#volumeId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/nls#volumeId> <http://www.w3.org/2000/01/rdf-schema#comment> "is the identifier of a volume."@en .
+<https://w3id.org/nls#volumeId> <http://www.w3.org/2000/01/rdf-schema#label> "volume id"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Book
+<http://schema.org/Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Organization
+<http://schema.org/Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/PublicationVolume
+<http://schema.org/PublicationVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/nls#Book
+<https://w3id.org/nls#Book> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Book> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Book> .
+<https://w3id.org/nls#Book> <http://www.w3.org/2000/01/rdf-schema#comment> "is a book that is not part of the collection."@en .
+<https://w3id.org/nls#Book> <http://www.w3.org/2000/01/rdf-schema#label> "Book"@en .
+# 
+# https://w3id.org/nls#Collection
+<https://w3id.org/nls#Collection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Collection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Book> .
+<https://w3id.org/nls#Collection> <http://www.w3.org/2000/01/rdf-schema#comment> "is a collection of the NLS"@en .
+<https://w3id.org/nls#Collection> <http://www.w3.org/2000/01/rdf-schema#label> "Collection"@en .
+# 
+# https://w3id.org/nls#Organization
+<https://w3id.org/nls#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Organization> .
+<https://w3id.org/nls#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "is an organization"@en .
+<https://w3id.org/nls#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# https://w3id.org/nls#Page
+<https://w3id.org/nls#Page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Page> <http://www.w3.org/2000/01/rdf-schema#comment> "is an page that inside a volume."@en .
+<https://w3id.org/nls#Page> <http://www.w3.org/2000/01/rdf-schema#label> "Page"@en .
+# 
+# https://w3id.org/nls#Person
+<https://w3id.org/nls#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Person> .
+<https://w3id.org/nls#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "is a person"@en .
+<https://w3id.org/nls#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# https://w3id.org/nls#Supplement
+<https://w3id.org/nls#Supplement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Supplement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Book> .
+<https://w3id.org/nls#Supplement> <http://www.w3.org/2000/01/rdf-schema#comment> "is a supplement of a collection or edditions."@en .
+<https://w3id.org/nls#Supplement> <http://www.w3.org/2000/01/rdf-schema#label> "Supplement"@en .
+# 
+# https://w3id.org/nls#Volume
+<https://w3id.org/nls#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/nls#Volume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/PublicationVolume> .
+<https://w3id.org/nls#Volume> <http://www.w3.org/2000/01/rdf-schema#comment> "a book from a collection or a supplement"@en .
+<https://w3id.org/nls#Volume> <http://www.w3.org/2000/01/rdf-schema#label> "Volume"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

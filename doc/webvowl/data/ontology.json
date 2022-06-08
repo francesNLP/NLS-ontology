@@ -31,17 +31,17 @@
         "value" : "nls",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.0.1",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/nls",
         "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
       } ],
       "title" : [ {
         "identifier" : "title",
@@ -203,7 +203,7 @@
     "id" : "89",
     "type" : "owl:unionOf"
   }, {
-    "id" : "60",
+    "id" : "59",
     "type" : "owl:unionOf"
   }, {
     "id" : "83",
@@ -592,7 +592,7 @@
     "instances" : 0,
     "union" : [ "14", "15" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "60"
+    "id" : "59"
   }, {
     "instances" : 0,
     "union" : [ "14", "15" ],
@@ -666,11 +666,11 @@
     "id" : "58",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "59",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "49",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "61",
     "type" : "rdfs:SubClassOf"
@@ -752,7 +752,7 @@
       "IRI-based" : "deathDate"
     },
     "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "0"
   }, {
     "iri" : "https://w3id.org/nls#hasPart",
@@ -834,7 +834,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "30" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "29"
   }, {
     "iri" : "https://w3id.org/nls#permanentURL",
@@ -887,7 +887,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "39" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "38"
   }, {
     "iri" : "https://w3id.org/nls#numberOfVolumes",
@@ -912,7 +912,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "49" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "48"
   }, {
     "iri" : "https://w3id.org/nls#supplementsTo",
@@ -958,6 +958,21 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "58"
   }, {
+    "iri" : "https://w3id.org/nls#editor",
+    "baseIri" : "https://w3id.org/nls",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "editor",
+      "en" : "editor"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "59",
+    "comment" : {
+      "en" : "is the editor of a collection or supplement"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
     "iri" : "https://w3id.org/nls#publicationYear",
     "baseIri" : "https://w3id.org/nls",
     "range" : "16",
@@ -970,22 +985,7 @@
       "en" : "is the year that a collection or supplement was published."
     },
     "attributes" : [ "datatype" ],
-    "id" : "59"
-  }, {
-    "iri" : "https://w3id.org/nls#editor",
-    "baseIri" : "https://w3id.org/nls",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "editor",
-      "en" : "editor"
-    },
-    "superproperty" : [ "48" ],
-    "domain" : "60",
-    "comment" : {
-      "en" : "is the editor of a collection or supplement"
-    },
-    "attributes" : [ "object" ],
-    "id" : "49"
+    "id" : "60"
   }, {
     "range" : "12",
     "domain" : "11",
@@ -1123,7 +1123,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "3" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "4"
   }, {
     "iri" : "https://w3id.org/nls#genre",
@@ -1162,7 +1162,7 @@
       "IRI-based" : "identifier"
     },
     "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "85"
   }, {
     "iri" : "http://schema.org/birthDate",
@@ -1172,7 +1172,7 @@
       "IRI-based" : "birthDate"
     },
     "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "86"
   }, {
     "iri" : "https://w3id.org/nls#metsXML",
