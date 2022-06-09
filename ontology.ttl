@@ -220,17 +220,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "language"@en .
 
 
-###  https://w3id.org/nls#letters
-:letters rdf:type owl:DatatypeProperty ;
-         rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Serie
-                                     :Supplement
-                                   )
-                     ] ;
-         rdfs:range xsd:string ;
-         rdfs:comment "is the range from which the terms of a collection or supplement are splitted across volumes."@en ;
-         rdfs:label "letters"@en .
-
 
 ###  https://w3id.org/nls#metsXML
 :metsXML rdf:type owl:DatatypeProperty ;

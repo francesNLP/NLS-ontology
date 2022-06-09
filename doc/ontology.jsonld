@@ -35,9 +35,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Serie"
+      "@id" : "https://w3id.org/nls#Organization"
     }, {
-      "@id" : "https://w3id.org/nls#Supplement"
+      "@id" : "https://w3id.org/nls#Person"
     } ]
   } ]
 }, {
@@ -45,9 +45,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Organization"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
-      "@id" : "https://w3id.org/nls#Person"
+      "@id" : "https://w3id.org/nls#Volume"
     } ]
   } ]
 }, {
@@ -57,7 +57,7 @@
     "@list" : [ {
       "@id" : "https://w3id.org/nls#Serie"
     }, {
-      "@id" : "https://w3id.org/nls#Volume"
+      "@id" : "https://w3id.org/nls#Supplement"
     } ]
   } ]
 }, {
@@ -92,16 +92,6 @@
   } ]
 }, {
   "@id" : "_:genid35",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/nls#Serie"
-    }, {
-      "@id" : "https://w3id.org/nls#Supplement"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -453,23 +443,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://w3id.org/nls#letters",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "is the range from which the terms of a collection or supplement are splitted across volumes."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid17"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "letters"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://w3id.org/nls#metsXML",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -508,7 +481,7 @@
     "@value" : "is the name of an item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid20"
+    "@id" : "_:genid17"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -584,7 +557,7 @@
     "@value" : "is the number representing the part of a volume. E.g., part 1 of 2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid23"
+    "@id" : "_:genid20"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "part"
@@ -630,7 +603,7 @@
     "@value" : "is the place in which a collection or supplement was printed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -647,7 +620,7 @@
     "@value" : "is the year that a collection or supplement was published."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid29"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -721,7 +694,7 @@
     "@value" : "is the shelf locator in which a collection or supplement is stored in the library."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid32"
+    "@id" : "_:genid29"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -738,7 +711,7 @@
     "@value" : "is the subtitle of an item."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid35"
+    "@id" : "_:genid32"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -806,7 +779,7 @@
     "@value" : "is the title of an item."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid38"
+    "@id" : "_:genid35"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
