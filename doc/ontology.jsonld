@@ -3,7 +3,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -13,7 +13,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -23,7 +23,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     }, {
@@ -35,7 +35,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -55,7 +55,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Volume"
     } ]
@@ -65,7 +65,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -75,7 +75,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -85,7 +85,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -95,7 +95,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -105,7 +105,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     }, {
@@ -117,7 +117,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://w3id.org/nls#Collection"
+      "@id" : "https://w3id.org/nls#Serie"
     }, {
       "@id" : "https://w3id.org/nls#Supplement"
     } ]
@@ -233,20 +233,6 @@
     "@id" : "http://schema.org/Book"
   } ]
 }, {
-  "@id" : "https://w3id.org/nls#Collection",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "is a collection of the NLS"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Collection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://schema.org/Book"
-  } ]
-}, {
   "@id" : "https://w3id.org/nls#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -284,6 +270,20 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Person"
+  } ]
+}, {
+  "@id" : "https://w3id.org/nls#Serie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "is a serie of the NLS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://schema.org/Book"
   } ]
 }, {
   "@id" : "https://w3id.org/nls#Supplement",
@@ -684,7 +684,7 @@
     "@value" : "is a book which references a collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/nls#Collection"
+    "@id" : "https://w3id.org/nls#Serie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -701,14 +701,14 @@
     "@value" : "is the property indicating the creatin of a new revision of an item"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/nls#Collection"
+    "@id" : "https://w3id.org/nls#Serie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "revision of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/nls#Collection"
+    "@id" : "https://w3id.org/nls#Serie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#wasRevisionOf"
@@ -762,7 +762,7 @@
     "@value" : "supplements to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/nls#Collection"
+    "@id" : "https://w3id.org/nls#Serie"
   } ]
 }, {
   "@id" : "https://w3id.org/nls#termsOfAddress",

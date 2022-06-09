@@ -31,17 +31,17 @@
         "value" : "nls",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/nls",
-        "type" : "iri"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "0.0.1",
         "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/nls",
+        "type" : "iri"
       } ],
       "title" : [ {
         "identifier" : "title",
@@ -128,7 +128,7 @@
     "id" : "51",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "67",
@@ -170,10 +170,10 @@
     "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "64",
+    "id" : "15",
     "type" : "owl:Class"
   }, {
     "id" : "52",
@@ -203,7 +203,7 @@
     "id" : "89",
     "type" : "owl:unionOf"
   }, {
-    "id" : "59",
+    "id" : "60",
     "type" : "owl:unionOf"
   }, {
     "id" : "83",
@@ -283,7 +283,7 @@
     }
   }, {
     "instances" : 0,
-    "union" : [ "14", "11" ],
+    "union" : [ "15", "11" ],
     "attributes" : [ "anonymous", "union" ],
     "id" : "24"
   }, {
@@ -407,7 +407,7 @@
     "comment" : {
       "en" : "is a supplement of a collection or edditions."
     },
-    "id" : "15",
+    "id" : "14",
     "superClasses" : [ "52" ]
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -506,19 +506,6 @@
     "attributes" : [ "external" ],
     "id" : "20"
   }, {
-    "iri" : "https://w3id.org/nls#Collection",
-    "baseIri" : "https://w3id.org/nls",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Collection",
-      "en" : "Collection"
-    },
-    "comment" : {
-      "en" : "is a collection of the NLS"
-    },
-    "id" : "14",
-    "superClasses" : [ "52" ]
-  }, {
     "iri" : "http://schema.org/Organization",
     "baseIri" : "http://schema.org",
     "instances" : 0,
@@ -528,6 +515,19 @@
     "subClasses" : [ "45" ],
     "attributes" : [ "external" ],
     "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/nls#Serie",
+    "baseIri" : "https://w3id.org/nls",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Serie",
+      "en" : "Serie"
+    },
+    "comment" : {
+      "en" : "is a serie of the NLS"
+    },
+    "id" : "15",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "http://schema.org/Book",
     "baseIri" : "http://schema.org",
@@ -592,7 +592,7 @@
     "instances" : 0,
     "union" : [ "14", "15" ],
     "attributes" : [ "anonymous", "union" ],
-    "id" : "59"
+    "id" : "60"
   }, {
     "instances" : 0,
     "union" : [ "14", "15" ],
@@ -666,11 +666,11 @@
     "id" : "58",
     "type" : "rdfs:SubClassOf"
   }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "49",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "60",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "61",
     "type" : "rdfs:SubClassOf"
@@ -834,7 +834,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "30" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "29"
   }, {
     "iri" : "https://w3id.org/nls#permanentURL",
@@ -887,7 +887,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "39" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "38"
   }, {
     "iri" : "https://w3id.org/nls#numberOfVolumes",
@@ -912,17 +912,17 @@
     },
     "domain" : "1",
     "subproperty" : [ "49" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "48"
   }, {
     "iri" : "https://w3id.org/nls#supplementsTo",
     "baseIri" : "https://w3id.org/nls",
-    "range" : "14",
+    "range" : "15",
     "label" : {
       "IRI-based" : "supplementsTo",
       "en" : "supplements to"
     },
-    "domain" : "15",
+    "domain" : "14",
     "comment" : {
       "en" : "is the collection(s) that a supplement supplements."
     },
@@ -945,33 +945,18 @@
   }, {
     "range" : "52",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "56"
   }, {
     "range" : "52",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "57"
   }, {
     "range" : "20",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "58"
-  }, {
-    "iri" : "https://w3id.org/nls#editor",
-    "baseIri" : "https://w3id.org/nls",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "editor",
-      "en" : "editor"
-    },
-    "superproperty" : [ "48" ],
-    "domain" : "59",
-    "comment" : {
-      "en" : "is the editor of a collection or supplement"
-    },
-    "attributes" : [ "object" ],
-    "id" : "49"
   }, {
     "iri" : "https://w3id.org/nls#publicationYear",
     "baseIri" : "https://w3id.org/nls",
@@ -985,22 +970,37 @@
       "en" : "is the year that a collection or supplement was published."
     },
     "attributes" : [ "datatype" ],
-    "id" : "60"
+    "id" : "59"
+  }, {
+    "iri" : "https://w3id.org/nls#editor",
+    "baseIri" : "https://w3id.org/nls",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "editor",
+      "en" : "editor"
+    },
+    "superproperty" : [ "48" ],
+    "domain" : "60",
+    "comment" : {
+      "en" : "is the editor of a collection or supplement"
+    },
+    "attributes" : [ "object" ],
+    "id" : "49"
   }, {
     "range" : "12",
     "domain" : "11",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "61"
   }, {
     "iri" : "https://w3id.org/nls#revisionOf",
     "baseIri" : "https://w3id.org/nls",
-    "range" : "14",
+    "range" : "15",
     "label" : {
       "IRI-based" : "revisionOf",
       "en" : "revision of"
     },
     "superproperty" : [ "29" ],
-    "domain" : "14",
+    "domain" : "15",
     "comment" : {
       "en" : "is the property indicating the creatin of a new revision of an item"
     },
@@ -1009,12 +1009,12 @@
   }, {
     "range" : "52",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "62"
   }, {
     "range" : "64",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "63"
   }, {
     "iri" : "https://w3id.org/nls#volumeId",
@@ -1108,7 +1108,7 @@
       "IRI-based" : "referencedBy",
       "en" : "referenced by"
     },
-    "domain" : "14",
+    "domain" : "15",
     "comment" : {
       "en" : "is a book which references a collection"
     },
@@ -1123,7 +1123,7 @@
     },
     "domain" : "1",
     "subproperty" : [ "3" ],
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "4"
   }, {
     "iri" : "https://w3id.org/nls#genre",

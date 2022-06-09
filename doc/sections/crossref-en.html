@@ -7,9 +7,6 @@ This section provides details for each class and property defined by NLS Ontolog
          <a href="#Book" title="https://w3id.org/nls#Book">Book</a>
       </li>
       <li>
-         <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
-      </li>
-      <li>
          <a href="#Organization" title="https://w3id.org/nls#Organization">Organization</a>
       </li>
       <li>
@@ -17,6 +14,9 @@ This section provides details for each class and property defined by NLS Ontolog
       </li>
       <li>
          <a href="#Person" title="https://w3id.org/nls#Person">Person</a>
+      </li>
+      <li>
+         <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
       </li>
       <li>
          <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -46,38 +46,6 @@ This section provides details for each class and property defined by NLS Ontolog
          <dt>is in range of</dt>
          <dd>
             <a href="#referencedBy" title="https://w3id.org/nls#referencedBy">referenced by</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Collection">
-      <h3>Collection<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/nls#Collection</p>
-      <div class="comment">
-         <span class="markdown">is a collection of the NLS</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <a href="http://schema.org/Book"
-               target="_blank"
-               title="http://schema.org/Book">book</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#referencedBy" title="https://w3id.org/nls#referencedBy">referenced by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#revisionOf" title="https://w3id.org/nls#revisionOf">revision of</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#revisionOf" title="https://w3id.org/nls#revisionOf">revision of</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#supplementsTo" title="https://w3id.org/nls#supplementsTo">supplements to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -149,6 +117,38 @@ This section provides details for each class and property defined by NLS Ontolog
          <dt>is in range of</dt>
          <dd>
             <a href="#editor" title="https://w3id.org/nls#editor">editor</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Serie">
+      <h3>Serie<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/nls#Serie</p>
+      <div class="comment">
+         <span class="markdown">is a serie of the NLS</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://schema.org/Book"
+               target="_blank"
+               title="http://schema.org/Book">book</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#referencedBy" title="https://w3id.org/nls#referencedBy">referenced by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#revisionOf" title="https://w3id.org/nls#revisionOf">revision of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#revisionOf" title="https://w3id.org/nls#revisionOf">revision of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#supplementsTo" title="https://w3id.org/nls#supplementsTo">supplements to</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -246,7 +246,7 @@ This section provides details for each class and property defined by NLS Ontolog
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -303,7 +303,7 @@ This section provides details for each class and property defined by NLS Ontolog
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -334,7 +334,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -366,12 +366,12 @@ This section provides details for each class and property defined by NLS Ontolog
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -396,7 +396,7 @@ This section provides details for each class and property defined by NLS Ontolog
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -582,7 +582,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -637,7 +637,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -669,7 +669,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -865,7 +865,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Volume" title="https://w3id.org/nls#Volume">Volume</a>
@@ -943,7 +943,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -972,7 +972,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -1001,7 +1001,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -1030,7 +1030,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>
@@ -1111,7 +1111,7 @@ This section provides details for each class and property defined by NLS Ontolog
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Collection" title="https://w3id.org/nls#Collection">Collection</a>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Supplement" title="https://w3id.org/nls#Supplement">Supplement</a>

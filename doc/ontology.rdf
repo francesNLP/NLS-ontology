@@ -149,7 +149,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -180,7 +180,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -203,7 +203,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/nls#referencedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/nls#Collection"/>
+        <rdfs:domain rdf:resource="https://w3id.org/nls#Serie"/>
         <rdfs:range rdf:resource="https://w3id.org/nls#Book"/>
         <rdfs:comment xml:lang="en">is a book which references a collection</rdfs:comment>
         <rdfs:label xml:lang="en">referenced by</rdfs:label>
@@ -216,8 +216,8 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/nls#revisionOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#wasRevisionOf"/>
-        <rdfs:domain rdf:resource="https://w3id.org/nls#Collection"/>
-        <rdfs:range rdf:resource="https://w3id.org/nls#Collection"/>
+        <rdfs:domain rdf:resource="https://w3id.org/nls#Serie"/>
+        <rdfs:range rdf:resource="https://w3id.org/nls#Serie"/>
         <rdfs:comment xml:lang="en">is the property indicating the creatin of a new revision of an item</rdfs:comment>
         <rdfs:label xml:lang="en">revision of</rdfs:label>
     </owl:ObjectProperty>
@@ -229,7 +229,7 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/nls#supplementsTo">
         <rdfs:domain rdf:resource="https://w3id.org/nls#Supplement"/>
-        <rdfs:range rdf:resource="https://w3id.org/nls#Collection"/>
+        <rdfs:range rdf:resource="https://w3id.org/nls#Serie"/>
         <rdfs:comment xml:lang="en">is the collection(s) that a supplement supplements.</rdfs:comment>
         <rdfs:label xml:lang="en">supplements to</rdfs:label>
     </owl:ObjectProperty>
@@ -313,7 +313,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -344,7 +344,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Volume"/>
                 </owl:unionOf>
@@ -364,7 +364,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -470,7 +470,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Volume"/>
                 </owl:unionOf>
             </owl:Class>
@@ -512,7 +512,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -531,7 +531,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -550,7 +550,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -569,7 +569,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                 </owl:unionOf>
             </owl:Class>
@@ -612,7 +612,7 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/nls#Collection"/>
+                    <rdf:Description rdf:about="https://w3id.org/nls#Serie"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Supplement"/>
                     <rdf:Description rdf:about="https://w3id.org/nls#Volume"/>
                 </owl:unionOf>
@@ -688,17 +688,6 @@
     
 
 
-    <!-- https://w3id.org/nls#Collection -->
-
-
-    <owl:Class rdf:about="https://w3id.org/nls#Collection">
-        <rdfs:subClassOf rdf:resource="http://schema.org/Book"/>
-        <rdfs:comment xml:lang="en">is a collection of the NLS</rdfs:comment>
-        <rdfs:label xml:lang="en">Collection</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/nls#Organization -->
 
 
@@ -727,6 +716,17 @@
         <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:comment xml:lang="en">is a person</rdfs:comment>
         <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/nls#Serie -->
+
+
+    <owl:Class rdf:about="https://w3id.org/nls#Serie">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Book"/>
+        <rdfs:comment xml:lang="en">is a serie of the NLS</rdfs:comment>
+        <rdfs:label xml:lang="en">Serie</rdfs:label>
     </owl:Class>
     
 
