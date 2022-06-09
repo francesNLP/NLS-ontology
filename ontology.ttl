@@ -74,7 +74,7 @@ xsd:date rdf:type rdfs:Datatype .
 :editor rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf <http://schema.org/editor> ;
         rdfs:domain [ rdf:type owl:Class ;
-                      owl:unionOf ( :Collection
+                      owl:unionOf ( :Serie
                                     :Supplement
                                   )
                     ] ;
@@ -93,7 +93,7 @@ xsd:date rdf:type rdfs:Datatype .
 :publisher rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://schema.org/publisher> ;
            rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Collection
+                         owl:unionOf ( :Serie
                                        :Supplement
                                      )
                        ] ;
@@ -108,7 +108,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/nls#referencedBy
 :referencedBy rdf:type owl:ObjectProperty ;
-              rdfs:domain :Collection ;
+              rdfs:domain :Serie ;
               rdfs:range :Book ;
               rdfs:comment "is a book which references a collection"@en ;
               rdfs:label "referenced by"@en .
@@ -117,8 +117,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#revisionOf
 :revisionOf rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasRevisionOf> ;
-            rdfs:domain :Collection ;
-            rdfs:range :Collection ;
+            rdfs:domain :Serie ;
+            rdfs:range :Serie ;
             rdfs:comment "is the property indicating the creatin of a new revision of an item"@en ;
             rdfs:label "revision of"@en .
 
@@ -126,7 +126,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#supplementsTo
 :supplementsTo rdf:type owl:ObjectProperty ;
                rdfs:domain :Supplement ;
-               rdfs:range :Collection ;
+               rdfs:range :Serie ;
                rdfs:comment "is the collection(s) that a supplement supplements."@en ;
                rdfs:label "supplements to"@en .
 
@@ -190,7 +190,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#genre
 :genre rdf:type owl:DatatypeProperty ;
        rdfs:domain [ rdf:type owl:Class ;
-                     owl:unionOf ( :Collection
+                     owl:unionOf ( :Serie
                                    :Supplement
                                  )
                    ] ;
@@ -210,7 +210,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#language
 :language rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Collection
+                        owl:unionOf ( :Serie
                                       :Supplement
                                       :Volume
                                     )
@@ -223,7 +223,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#letters
 :letters rdf:type owl:DatatypeProperty ;
          rdfs:domain [ rdf:type owl:Class ;
-                       owl:unionOf ( :Collection
+                       owl:unionOf ( :Serie
                                      :Supplement
                                    )
                      ] ;
@@ -284,7 +284,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#part
 :part rdf:type owl:DatatypeProperty ;
       rdfs:domain [ rdf:type owl:Class ;
-                    owl:unionOf ( :Collection
+                    owl:unionOf ( :Serie
                                   :Volume
                                 )
                   ] ;
@@ -311,7 +311,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#printedAt
 :printedAt rdf:type owl:DatatypeProperty ;
            rdfs:domain [ rdf:type owl:Class ;
-                         owl:unionOf ( :Collection
+                         owl:unionOf ( :Serie
                                        :Supplement
                                      )
                        ] ;
@@ -323,7 +323,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#publicationYear
 :publicationYear rdf:type owl:DatatypeProperty ;
                  rdfs:domain [ rdf:type owl:Class ;
-                               owl:unionOf ( :Collection
+                               owl:unionOf ( :Serie
                                              :Supplement
                                            )
                              ] ;
@@ -335,7 +335,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#shelfLocator
 :shelfLocator rdf:type owl:DatatypeProperty ;
               rdfs:domain [ rdf:type owl:Class ;
-                            owl:unionOf ( :Collection
+                            owl:unionOf ( :Serie
                                           :Supplement
                                         )
                           ] ;
@@ -347,7 +347,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#subtitle
 :subtitle rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
-                        owl:unionOf ( :Collection
+                        owl:unionOf ( :Serie
                                       :Supplement
                                     )
                       ] ;
@@ -367,7 +367,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#title
 :title rdf:type owl:DatatypeProperty ;
        rdfs:domain [ rdf:type owl:Class ;
-                     owl:unionOf ( :Collection
+                     owl:unionOf ( :Serie
                                    :Supplement
                                    :Volume
                                  )
@@ -412,11 +412,11 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:label "Book"@en .
 
 
-###  https://w3id.org/nls#Collection
-:Collection rdf:type owl:Class ;
+###  https://w3id.org/nls#Serie
+:Serie rdf:type owl:Class ;
          rdfs:subClassOf <http://schema.org/Book> ;
-         rdfs:comment "is a collection of the NLS"@en ;
-         rdfs:label "Collection"@en .
+         rdfs:comment "is a serie of the NLS"@en ;
+         rdfs:label "Serie"@en .
 
 
 ###  https://w3id.org/nls#Organization
