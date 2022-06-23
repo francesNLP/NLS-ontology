@@ -33,7 +33,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#Book</p>
       <div class="comment">
-         <span class="markdown">is a book that is not part of the collection.</span>
+         <span class="markdown">is a book that is not part of the serie.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -161,7 +161,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#Supplement</p>
       <div class="comment">
-         <span class="markdown">is a supplement of a collection or edditions.</span>
+         <span class="markdown">is a supplement of a serie or edditions.</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -186,7 +186,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#Volume</p>
       <div class="comment">
-         <span class="markdown">a book from a collection or a supplement</span>
+         <span class="markdown">a book from a serie or a supplement</span>
       </div>
       <dl class="description">
          <dt>has super-classes</dt>
@@ -233,7 +233,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#editor</p>
       <div class="comment">
-         <span class="markdown">is the editor of a collection or supplement</span>
+         <span class="markdown">is the editor of a serie or supplement</span>
       </div>
       <div class="description">
          <dl>
@@ -290,7 +290,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#publisher</p>
       <div class="comment">
-         <span class="markdown">is the publisher of a collection or supplement. The publisher can be one or several persons, and/or an organization</span>
+         <span class="markdown">is the publisher of a serie or supplement. The publisher can be one or several persons, and/or an organization</span>
       </div>
       <div class="description">
          <dl>
@@ -328,7 +328,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#referencedBy</p>
       <div class="comment">
-         <span class="markdown">is a book which references a collection</span>
+         <span class="markdown">is a book which references a serie</span>
       </div>
       <div class="description">
          <dl>
@@ -385,7 +385,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#supplementsTo</p>
       <div class="comment">
-         <span class="markdown">is the collection(s) that a supplement supplements.</span>
+         <span class="markdown">is the serie(s) that a supplement supplements.</span>
       </div>
       <div class="description">
          <dl>
@@ -410,6 +410,9 @@ This section provides details for each class and property defined by NLS Ontolog
       </li>
       <li>
          <a href="#birthDate" title="https://w3id.org/nls#birthDate">Birth date</a>
+      </li>
+      <li>
+         <a href="#collection" title="https://w3id.org/nls#collection">collection name</a>
       </li>
       <li>
          <a href="#deathDate" title="https://w3id.org/nls#deathDate">death date</a>
@@ -532,6 +535,32 @@ This section provides details for each class and property defined by NLS Ontolog
          </dl>
       </div>
    </div>
+   <div class="entity" id="collection">
+      <h3>collection name<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/nls#collection</p>
+      <div class="comment">
+         <span class="markdown">is the name of the collection that series belong to.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Serie" title="https://w3id.org/nls#Serie">Serie</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="deathDate">
       <h3>death date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -573,7 +602,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#genre</p>
       <div class="comment">
-         <span class="markdown">is the genre of a collection or a supplement.</span>
+         <span class="markdown">is the genre of a serie or a supplement.</span>
       </div>
       <div class="description">
          <dl>
@@ -628,7 +657,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#language</p>
       <div class="comment">
-         <span class="markdown">is the language used to write the collection</span>
+         <span class="markdown">is the language used to write the serie</span>
       </div>
       <div class="description">
          <dl>
@@ -660,7 +689,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#metsXML</p>
       <div class="comment">
-         <span class="markdown">is the name of the METS XML file representing a volume from a particular collection or supplement.</span>
+         <span class="markdown">is the name of the METS XML file representing a volume from a particular serie or supplement.</span>
       </div>
       <div class="description">
          <dl>
@@ -681,7 +710,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#mmsid</p>
       <div class="comment">
-         <span class="markdown">is the Metadata Management System identifier of a collection or supplement</span>
+         <span class="markdown">is the Metadata Management System identifier of a serie or supplement</span>
       </div>
       <div class="description">
          <dl>
@@ -785,7 +814,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#numberOfVolumes</p>
       <div class="comment">
-         <span class="markdown">is the number of volumes of a collection or supplement.</span>
+         <span class="markdown">is the number of volumes of a series or supplement.</span>
       </div>
       <div class="description">
          <dl>
@@ -806,7 +835,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#numberOfWords</p>
       <div class="comment">
-         <span class="markdown">is the number of words of an entry in the collection.</span>
+         <span class="markdown">is the number of words of an entry in the serie.</span>
       </div>
       <div class="description">
          <dl>
@@ -884,7 +913,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#physicalDescription</p>
       <div class="comment">
-         <span class="markdown">is the physical description of a collection or supplement.</span>
+         <span class="markdown">is the physical description of a serie or supplement.</span>
       </div>
       <div class="description">
          <dl>
@@ -905,7 +934,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#printedAt</p>
       <div class="comment">
-         <span class="markdown">is the place in which a collection or supplement was printed.</span>
+         <span class="markdown">is the place in which a serie or supplement was printed.</span>
       </div>
       <div class="description">
          <dl>
@@ -934,7 +963,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#publicationYear</p>
       <div class="comment">
-         <span class="markdown">is the year that a collection or supplement was published.</span>
+         <span class="markdown">is the year that a serie or supplement was published.</span>
       </div>
       <div class="description">
          <dl>
@@ -963,7 +992,7 @@ This section provides details for each class and property defined by NLS Ontolog
       <p>
          <strong>IRI:</strong> https://w3id.org/nls#shelfLocator</p>
       <div class="comment">
-         <span class="markdown">is the shelf locator in which a collection or supplement is stored in the library.</span>
+         <span class="markdown">is the shelf locator in which a serie or supplement is stored in the library.</span>
       </div>
       <div class="description">
          <dl>

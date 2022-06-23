@@ -11,7 +11,7 @@
 <https://w3id.org/nls#> rdf:type owl:Ontology ;
                         owl:versionIRI <https://w3id.org/nls/0.0.1> ;
                         dc:creator "Rosa Filgueira" ;
-                        dc:description "An ontology designed to represent collections and volumes from NLS. The ontology extends Schema.org."@en ;
+                        dc:description "An ontology designed to represent series and volumes from NLS digital collection. The ontology extends Schema.org."@en ;
                         dc:license <https://opensource.org/licenses/MIT> ;
                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "nls"@en ;
                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/nls> ;
@@ -79,7 +79,7 @@ xsd:date rdf:type rdfs:Datatype .
                                   )
                     ] ;
         rdfs:range :Person ;
-        rdfs:comment "is the editor of a collection or supplement"@en ;
+        rdfs:comment "is the editor of a serie or supplement"@en ;
         rdfs:label "editor"@en .
 
 ###  https://w3id.org/nls#hasPart
@@ -102,7 +102,7 @@ xsd:date rdf:type rdfs:Datatype .
                                       :Person
                                     )
                       ] ;
-           rdfs:comment "is the publisher of a collection or supplement. The publisher can be one or several persons, and/or an organization"@en ;
+           rdfs:comment "is the publisher of a serie or supplement. The publisher can be one or several persons, and/or an organization"@en ;
            rdfs:label "publisher"@en .
 
 
@@ -110,7 +110,7 @@ xsd:date rdf:type rdfs:Datatype .
 :referencedBy rdf:type owl:ObjectProperty ;
               rdfs:domain :Serie ;
               rdfs:range :Book ;
-              rdfs:comment "is a book which references a collection"@en ;
+              rdfs:comment "is a book which references a serie"@en ;
               rdfs:label "referenced by"@en .
 
 
@@ -127,7 +127,7 @@ xsd:date rdf:type rdfs:Datatype .
 :supplementsTo rdf:type owl:ObjectProperty ;
                rdfs:domain :Supplement ;
                rdfs:range :Serie ;
-               rdfs:comment "is the collection(s) that a supplement supplements."@en ;
+               rdfs:comment "is the serie(s) that a supplement supplements."@en ;
                rdfs:label "supplements to"@en .
 
 
@@ -195,7 +195,7 @@ xsd:date rdf:type rdfs:Datatype .
                                  )
                    ] ;
        rdfs:range xsd:string ;
-       rdfs:comment "is the genre of a collection or a supplement."@en ;
+       rdfs:comment "is the genre of a serie or a supplement."@en ;
        rdfs:label "genre"@en .
 
 
@@ -216,7 +216,7 @@ xsd:date rdf:type rdfs:Datatype .
                                     )
                       ] ;
           rdfs:range xsd:string ;
-          rdfs:comment "is the language used to write the collection"@en ;
+          rdfs:comment "is the language used to write the serie"@en ;
           rdfs:label "language"@en .
 
 
@@ -224,7 +224,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#metsXML
 :metsXML rdf:type owl:DatatypeProperty ;
          rdfs:range xsd:string ;
-         rdfs:comment "is the name of the METS XML file representing a volume from a particular collection or supplement."@en ;
+         rdfs:comment "is the name of the METS XML file representing a volume from a particular serie or supplement."@en ;
          rdfs:label "mets XML"@en .
 
 
@@ -232,7 +232,7 @@ xsd:date rdf:type rdfs:Datatype .
 :mmsid rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf <http://schema.org/identifier> ;
        rdfs:range xsd:string ;
-       rdfs:comment "is the Metadata Management System identifier of a collection or supplement"@en ;
+       rdfs:comment "is the Metadata Management System identifier of a serie or supplement"@en ;
        rdfs:label "mmsid"@en .
 
 
@@ -259,14 +259,14 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#numberOfVolumes
 :numberOfVolumes rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:int ;
-                 rdfs:comment "is the number of volumes of a collection or supplement."@en ;
+                 rdfs:comment "is the number of volumes of a series or supplement."@en ;
                  rdfs:label "number of volumes"@en .
 
 
 ###  https://w3id.org/nls#numberOfWords
 :numberOfWords rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:int ;
-               rdfs:comment "is the number of words of an entry in the collection."@en ;
+               rdfs:comment "is the number of words of an entry in the serie."@en ;
                rdfs:label "number of words"@en .
 
 
@@ -293,7 +293,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#physicalDescription
 :physicalDescription rdf:type owl:DatatypeProperty ;
                      rdfs:range xsd:string ;
-                     rdfs:comment "is the physical description of a collection or supplement."@en ;
+                     rdfs:comment "is the physical description of a serie or supplement."@en ;
                      rdfs:label "physical description"@en .
 
 
@@ -305,8 +305,18 @@ xsd:date rdf:type rdfs:Datatype .
                                      )
                        ] ;
            rdfs:range xsd:string ;
-           rdfs:comment "is the place in which a collection or supplement was printed." ;
+           rdfs:comment "is the place in which a serie or supplement was printed." ;
            rdfs:label "printed at"@en .
+
+###  https://w3id.org/nls#collection
+:collection rdf:type owl:DatatypeProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Serie
+                                     )
+                       ] ;
+           rdfs:range xsd:string ;
+           rdfs:comment "is the name of the collection that series belong to." ;
+           rdfs:label "collection name"@en .
 
 
 ###  https://w3id.org/nls#publicationYear
@@ -317,7 +327,7 @@ xsd:date rdf:type rdfs:Datatype .
                                            )
                              ] ;
                  rdfs:range xsd:int ;
-                 rdfs:comment "is the year that a collection or supplement was published."@en ;
+                 rdfs:comment "is the year that a serie or supplement was published."@en ;
                  rdfs:label "publication year"@en .
 
 
@@ -329,7 +339,7 @@ xsd:date rdf:type rdfs:Datatype .
                                         )
                           ] ;
               rdfs:range xsd:string ;
-              rdfs:comment "is the shelf locator in which a collection or supplement is stored in the library."@en ;
+              rdfs:comment "is the shelf locator in which a serie or supplement is stored in the library."@en ;
               rdfs:label "shelf locator"@en .
 
 
@@ -397,7 +407,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#Book
 :Book rdf:type owl:Class ;
       rdfs:subClassOf <http://schema.org/Book> ;
-      rdfs:comment "is a book that is not part of the collection."@en ;
+      rdfs:comment "is a book that is not part of the serie."@en ;
       rdfs:label "Book"@en .
 
 
@@ -431,7 +441,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#Supplement
 :Supplement rdf:type owl:Class ;
             rdfs:subClassOf <http://schema.org/Book> ;
-            rdfs:comment "is a supplement of a collection or edditions."@en ;
+            rdfs:comment "is a supplement of a serie or edditions."@en ;
             rdfs:label "Supplement"@en .
 
 
@@ -439,7 +449,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/nls#Volume
 :Volume rdf:type owl:Class ;
         rdfs:subClassOf <http://schema.org/PublicationVolume> ;
-        rdfs:comment "a book from a collection or a supplement"@en ;
+        rdfs:comment "a book from a serie or a supplement"@en ;
         rdfs:label "Volume"@en .
 
 
